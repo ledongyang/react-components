@@ -1,10 +1,10 @@
 import React from 'react';
-import TextInput from 'react-components/TextInput';
+import TextInputBEM from 'react-components/TextInputBEM';
 
 /** Required TextBox with error */
 export default class ExampleError extends React.Component {
   render() {
-    return <TextInput
+    return <TextInputBEM
               htmlId="example-optional"
               label="First Name"
               name="firstname"

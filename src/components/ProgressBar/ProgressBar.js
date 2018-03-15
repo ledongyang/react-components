@@ -8,8 +8,8 @@ class ProgressBar extends React.Component {
     return percent > 50 ? 'lightgreen' : 'red';
   }
 
-  getWidthByPercent = (width, percent) => {
-    return parseInt(width*(percent/100), 10);
+  getWidthAsPercentOfTotalWidth = () => {
+    return parseInt(this.props.width*(this.props.percent/100), 10);
   }
 
   render() {
@@ -17,7 +17,7 @@ class ProgressBar extends React.Component {
     return (
       <div style={{border: 'solid 1px lightgray', width: width}}>
         <div style={{
-          width: this.getWidthByPercent(width, percent),
+          width: this.getWidthAsPercentOfTotalWidth(),
           height: height,
           backgroundColor: this.getColor(percent)
         }}></div>
