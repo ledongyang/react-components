@@ -8,4 +8,4 @@ npm install react-components
 ```
 
 # Docs
-[Components documentation]: (https://ledongyang.github.io/react-components/)
+[Components documentation](https://ledongyang.github.io/react-components/)
