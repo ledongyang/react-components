@@ -21,16 +21,16 @@ class Example extends React.Component {
     // Must use CommonJS require to dynamically require because ES Modules must be statically analyzable
     const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
     return (
-      <div className="example">
-        {description && <h4>{description}</h4>}
+      <div className="uk-card uk-card-hover uk-card-body">
+        {description && <h5 className="uk-heading-bullet">{description}</h5>}
 
         <ExampleComponent />
 
-        <p>
-          <a href="" onClick={this.toggleCode}>
+        <button className="uk-button-default">
+          <a href="" onClick={this.toggleCode} style={{textDecoration: 'none'}}>
             {showCode ? 'Hide' : 'Show'} Code
           </a>
-        </p>
+        </button>
 
         {showCode && <CodeExample>{code}</CodeExample>}
       </div>

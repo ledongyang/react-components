@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Props = ({props}) => {
   return (
-    <table className="props">
+    <table className="uk-table uk-table-hover uk-table-divider">
       <thead>
         <tr>
           <th>Name</th>
@@ -20,9 +20,9 @@ const Props = ({props}) => {
               <tr key={key}>
                 <td>{key}</td>
                 <td>{props[key].description}</td>
-                <td>{props[key].type.name}</td>
-                <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
-                <td>{props[key].required && 'X'}</td>
+                <td style={{textAlign: 'center'}}>{props[key].type.name}</td>
+                <td style={{textAlign: 'center'}}>{props[key].defaultValue && props[key].defaultValue.value}</td>
+                <td style={{textAlign: 'center'}}>{props[key].required && 'Yes'}</td>
               </tr>
             );
           })

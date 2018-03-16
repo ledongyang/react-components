@@ -25,7 +25,10 @@ export default class Docs extends React.Component {
 
     return (
       <div>
-        <Navigation components={componentData.map((component) => component.name)}/>
+        <Navigation
+          components={componentData.map((component) => component.name)}
+          route={this.state.route}
+        />
         <ComponentPage component={component}/>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/** Progress Bar with different color according to percentage. */
 class ProgressBar extends React.Component {
 
   getColor = (percent) => {

@@ -1,19 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navigation = ({components}) => {
+const Navigation = ({components, route}) => {
   return (
-    <ul className="uk-nav">
-      {
-        components.map((name) => {
-          return (
-            <li key={name}>
-              <a href={`#${name}`}>{name}</a>
-            </li>
-          );
-        })
-      }
-    </ul>
+    <div className="navigation">
+      <ul className="uk-nav uk-nav-primary">
+        {
+          components.map((name) => {
+            return (
+              name === route ?
+                <li key={name} className="uk-active">
+                  <a href={`#${name}`}>{name}</a>
+                </li> : <li key={name}>
+                  <a href={`#${name}`}>{name}</a>
+                </li>
+            );
+          })
+        }
+      </ul>
+    </div>
   );
 };
 
