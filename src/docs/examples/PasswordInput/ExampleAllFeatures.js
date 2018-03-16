@@ -6,7 +6,7 @@ class ExampleAllFeatures extends React.Component {
     super(props);
     this.state = {
       password: ''
-    }
+    };
   }
 
   getQuality() {
@@ -24,15 +24,15 @@ class ExampleAllFeatures extends React.Component {
     return (
       <div>
         <PasswordInput
-         htmlId="password-input-example-all-features"
-         name="password"
-         onChange={this.onChange}
-         value={this.state.password}
-         minLength={8}
-         placeholder="Enter Password"
-         showVisibilityToggle
-         quality={this.getQuality()}
-         {...this.props}
+          htmlId="password-input-example-all-features"
+          name="password"
+          onChange={this.onChange}
+          value={this.state.password}
+          minLength={8}
+          placeholder="Enter Password"
+          showVisibilityToggle
+          quality={this.getQuality()}
+          {...this.props}
         />
       </div>
     );

@@ -8,7 +8,7 @@ const Label = ({htmlFor, label, required}) => {
       {label} { required && <span style={{color: 'red'}}> *</span> }
     </label>
   );
-}
+};
 
 Label.propTypes = {
   /** HTML ID for associated input */

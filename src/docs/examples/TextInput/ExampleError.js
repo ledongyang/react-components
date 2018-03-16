@@ -5,12 +5,12 @@ import TextInput from 'react-components/TextInput';
 export default class ExampleError extends React.Component {
   render() {
     return <TextInput
-              htmlId="example-optional"
-              label="First Name"
-              name="firstname"
-              onChange={() => {}}
-              required
-              error="First name is required."
-              />
+      htmlId="example-optional"
+      label="First Name"
+      name="firstname"
+      onChange={() => {}}
+      required
+      error="First name is required."
+    />;
   }
 }

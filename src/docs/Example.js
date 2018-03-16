@@ -10,7 +10,7 @@ class Example extends React.Component {
 
   toggleCode = (evt) => {
     evt.preventDefault();
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       showCode: !prevState.showCode
     }));
   }
@@ -28,7 +28,7 @@ class Example extends React.Component {
 
         <p>
           <a href="" onClick={this.toggleCode}>
-          {showCode ? "Hide" : "Show"} Code
+            {showCode ? 'Hide' : 'Show'} Code
           </a>
         </p>
 

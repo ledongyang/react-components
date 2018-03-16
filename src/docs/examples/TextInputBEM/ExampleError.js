@@ -5,12 +5,12 @@ import TextInputBEM from 'react-components/TextInputBEM';
 export default class ExampleError extends React.Component {
   render() {
     return <TextInputBEM
-              htmlId="example-optional"
-              label="First Name"
-              name="firstname"
-              onChange={() => {}}
-              required
-              error="First name is required."
-              />
+      htmlId="example-optional"
+      label="First Name"
+      name="firstname"
+      onChange={() => {}}
+      required
+      error="First name is required."
+    />;
   }
 }

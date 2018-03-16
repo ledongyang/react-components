@@ -15,7 +15,7 @@ const Props = ({props}) => {
       </thead>
       <tbody>
         {
-          Object.keys(props).map(key => {
+          Object.keys(props).map((key) => {
             return (
               <tr key={key}>
                 <td>{key}</td>
@@ -24,13 +24,13 @@ const Props = ({props}) => {
                 <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
                 <td>{props[key].required && 'X'}</td>
               </tr>
-            )
+            );
           })
         }
       </tbody>
     </table>
   );
-}
+};
 
 Props.propTypes = {
   props: PropTypes.object.isRequired

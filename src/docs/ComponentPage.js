@@ -13,18 +13,18 @@ const ComponentPage = ({component}) => {
       <h3>Example{examples.length > 1 && 's'}</h3>
       {
         examples.length > 0 ?
-        examples.map(example => <Example key={example.code} example={example} componentName={name}/>) :
-        'No Example exists.'
+          examples.map((example) => <Example key={example.code} example={example} componentName={name}/>) :
+          'No Example exists.'
       }
       <h3>Props</h3>
       {
         props ?
-        <Props props={props}/> :
-        'This component accepts no props.'
+          <Props props={props}/> :
+          'This component accepts no props.'
       }
     </div>
   );
-}
+};
 
 ComponentPage.propTypes = {
   component: PropTypes.object.isRequired

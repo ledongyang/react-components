@@ -62,30 +62,30 @@ class RegistrationForm extends React.Component {
     const {email, password} = this.state.user;
     return (
       submitted ?
-      <h2>{this.props.confirmationMessage}</h2> :
-      <div>
-        <TextInput
-          htmlId="registration-form-email"
-          name="email"
-          onChange={this.onChange}
-          label="Email"
-          value={email}
-          error={errors.email}
-          required />
+        <h2>{this.props.confirmationMessage}</h2> :
+        <div>
+          <TextInput
+            htmlId="registration-form-email"
+            name="email"
+            onChange={this.onChange}
+            label="Email"
+            value={email}
+            error={errors.email}
+            required />
 
-        <PasswordInput
-          htmlId="registration-form-password"
-          name="password"
-          value={password}
-          onChange={this.onChange}
-          quality={this.passwordQuality(password)}
-          showVisibilityToggle
-          maxLength={50}
-          error={errors.password} />
+          <PasswordInput
+            htmlId="registration-form-password"
+            name="password"
+            value={password}
+            onChange={this.onChange}
+            quality={this.passwordQuality(password)}
+            showVisibilityToggle
+            maxLength={50}
+            error={errors.password} />
 
-        <input type="submit" value="Register" onClick={this.onSubmit} />
-      </div>
-    )
+          <input type="submit" value="Register" onClick={this.onSubmit} />
+        </div>
+    );
   }
 }
 
@@ -98,10 +98,10 @@ RegistrationForm.propTypes = {
 
   /** Minimum password length */
   minPasswordLength: PropTypes.number
-}
+};
 
 RegistrationForm.defaultProps = {
-  confirmationMessage: "Thanks for registering!",
+  confirmationMessage: 'Thanks for registering!',
   minPasswordLength: 8
 };
 

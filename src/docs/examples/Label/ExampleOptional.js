@@ -3,5 +3,5 @@ import Label from 'react-components/Label';
 
 /** Optional label */
 export default function ExampleOptional() {
-  return <Label htmlFor='test' label='test' />
+  return <Label htmlFor='test' label='test' />;
 }

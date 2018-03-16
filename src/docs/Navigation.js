@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Navigation = ({components}) => {
   return (
-    <ul className="navigation">
+    <ul className="uk-nav">
       {
-        components.map(name => {
+        components.map((name) => {
           return (
             <li key={name}>
               <a href={`#${name}`}>{name}</a>
@@ -15,7 +15,7 @@ const Navigation = ({components}) => {
       }
     </ul>
   );
-}
+};
 
 Navigation.propTypes = {
   components: PropTypes.array.isRequired

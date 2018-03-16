@@ -37,6 +37,6 @@ ProgressBar.propTypes = {
 
 ProgressBar.defaultProps = {
   height: 5
-}
+};
 
 export default ProgressBar;
