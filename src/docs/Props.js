@@ -18,11 +18,11 @@ const Props = ({props}) => {
           Object.keys(props).map((key) => {
             return (
               <tr key={key}>
-                <td>{key}</td>
+                <td>{'{'+key+'}'}</td>
                 <td>{props[key].description}</td>
-                <td style={{textAlign: 'center'}}>{props[key].type.name}</td>
-                <td style={{textAlign: 'center'}}>{props[key].defaultValue && props[key].defaultValue.value}</td>
-                <td style={{textAlign: 'center'}}>{props[key].required && 'Yes'}</td>
+                <td>{props[key].type.name}</td>
+                <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
+                <td>{props[key].required && 'Yes'}</td>
               </tr>
             );
           })
