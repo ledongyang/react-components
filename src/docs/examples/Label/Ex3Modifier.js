@@ -2,7 +2,7 @@ import React from 'react';
 import Label from 'react-components/Label';
 
 /** Optional modifier label */
-export default function ExampleOptional() {
+export default function Ex3Modifier() {
   return (
     <div>
       <Label htmlFor='success' label='success' modifier='success'/>
