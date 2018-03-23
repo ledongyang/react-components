@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from 'react-components/Label';
 
-/** Optional label */
+/** Optional default label */
 export default function ExampleOptional() {
-  return <Label htmlFor='test' label='test' />;
+  return <Label htmlFor='default' label='default' />;
 }

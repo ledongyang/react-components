@@ -6,7 +6,7 @@ class ProgressBar extends React.Component {
 
   getColor = (percent) => {
     if (percent === 100) return 'green';
-    return percent > 50 ? 'lightgreen' : 'red';
+    return percent > 50 ? 'orange' : 'red';
   }
 
   getWidthAsPercentOfTotalWidth = () => {
