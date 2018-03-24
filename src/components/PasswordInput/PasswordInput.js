@@ -46,7 +46,7 @@ class PasswordInput extends React.Component {
           </a>
         }
         {
-          value.length > 0 && quality && <ProgressBar percent={quality} width={130} />
+          value.length > 0 && quality && <ProgressBar percent={quality} width={200} />
         }
       </TextInput>
     );

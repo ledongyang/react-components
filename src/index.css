@@ -26,6 +26,7 @@ table {
 
 /* Documentation site component styles */
 .navigation {
+  position: fixed;
   float: left;
   width: 150px;
   list-style-type: none;
