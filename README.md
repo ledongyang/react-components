@@ -1,6 +1,6 @@
-# Pluralsight React Components
+# React Reusable Components
 
-A library of React Components created in "Creating Reusable React Components" on Pluralsight
+A library of React Components created on Top of [UIKit CSS framework](http://getuikit.com)
 
 ## Install
 ```
